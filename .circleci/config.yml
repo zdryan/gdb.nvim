@@ -1,0 +1,23 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: ubuntu:lunar
+    steps:
+      - checkout
+      - run:
+          name: Install dependnecies
+          command: |
+            apt-get update
+            apt-get install -y git build-essential gdb curl lua5.4 liblua5.4-dev socat
+            curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+            tar -C /opt -xzf nvim-linux64.tar.gz
+      - run:
+          name: Test
+          command: |
+            export PATH="$PATH:/opt/nvim-linux64/bin"
+            make test
+workflows:
+  test:
+    jobs:
+      - test
