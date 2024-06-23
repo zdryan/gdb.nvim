@@ -1,7 +1,7 @@
 # gdb.nvim
 > neovim front-end for gdb
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/zdryan/gdb.nvim/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/zdryan/gdb.nvim/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/zdryan/gdb.nvim/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/zdryan/gdb.nvim/tree/main)
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]()
 
 [![gdb.nvim](https://asciinema.org/a/qNf2dQMzmEYDClFBulKEr8gsD.svg)](https://asciinema.org/a/qNf2dQMzmEYDClFBulKEr8gsD)
